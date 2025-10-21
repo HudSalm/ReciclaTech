@@ -171,7 +171,7 @@ header::before {
   padding: 3rem;
   text-align: center;
 }
-.second-article .tutorial {
+.second-article .tutorial-steps {
   background-color: var(--bg);
   text-align: start;
   padding: 1.5rem;
@@ -180,29 +180,29 @@ header::before {
   flex-direction: column;
   gap: 1.5rem;
 }
-.second-article .tutorial .donors {
+.second-article .tutorial-steps .donors {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   color: var(--title2);
 }
-.second-article .tutorial .donors img {
+.second-article .tutorial-steps .donors img {
   width: 9vw;
 }
-.second-article .tutorial li {
+.second-article .tutorial-steps li {
   display: flex;
   gap: 0.8rem;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
 }
-.second-article .tutorial .acquirers {
+.second-article .tutorial-steps .acquirers {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   color: var(--title3);
 }
-.second-article .tutorial .acquirers img {
+.second-article .tutorial-steps .acquirers img {
   width: 9vw;
 }
 
@@ -242,7 +242,7 @@ header::before {
 .fourth-article h3 {
   margin: 1rem 0 2rem 0;
 }
-.fourth-article .avaliations {
+.fourth-article .avaliations-cards {
   text-align: start;
   padding: 2rem;
   border: solid 1px;
@@ -250,19 +250,19 @@ header::before {
   border-radius: 6px;
   margin: 3rem 0;
 }
-.fourth-article .avaliations blockquote {
+.fourth-article .avaliations-cards blockquote {
   margin: 1rem 0 2rem 0;
 }
-.fourth-article .avaliations div {
+.fourth-article .avaliations-cards div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
 }
-.fourth-article .avaliations div img {
+.fourth-article .avaliations-cards div img {
   width: 9vw;
 }
-.fourth-article .avaliations .nome {
+.fourth-article .avaliations-cards .nome {
   color: var(--title);
 }
 
@@ -349,7 +349,7 @@ footer .links .links-social-media {
     align-items: center;
   }
   .first-article h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
   }
   .first-article .article-information {
     align-items: start;
@@ -361,6 +361,7 @@ footer .links .links-social-media {
   .first-article .article-information .btn-transparent {
     padding: 1rem 2rem;
     width: auto;
+    margin-left: 1rem;
   }
   .first-article img {
     max-width: 100%;
@@ -369,5 +370,106 @@ footer .links .links-social-media {
   .datas {
     display: flex;
     justify-content: space-around;
+  }
+  .second-article {
+    padding: 5rem;
+  }
+  .second-article h3 {
+    margin: 2rem 0 4rem 0;
+  }
+  .second-article .tutorial {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .second-article .tutorial .tutorial-steps {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .second-article .tutorial .tutorial-steps .donors,
+  .second-article .tutorial .tutorial-steps .acquirers {
+    margin: 0;
+  }
+  .second-article .tutorial .tutorial-steps .donors img,
+  .second-article .tutorial .tutorial-steps .acquirers img {
+    max-width: 100%;
+    width: auto;
+  }
+  .second-article .tutorial .tutorial-steps ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second-article .tutorial .tutorial-steps li {
+    justify-content: start;
+  }
+  .third-article {
+    padding: 5rem;
+  }
+  .third-article h3 {
+    margin: 2rem 0 4rem 0;
+  }
+  .third-article .categories {
+    display: flex;
+    gap: 2rem;
+  }
+  .third-article .categories .categories-types {
+    width: 50%;
+  }
+  .third-article .categories .categories-types img {
+    max-width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .fourth-article {
+    padding: 5rem;
+  }
+  .fourth-article h3 {
+    margin: 2rem 0 2rem 0;
+  }
+  .fourth-article .avaliations {
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .fourth-article .avaliations .avaliations-cards {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .fourth-article .avaliations .avaliations-cards img {
+    max-width: 10vw;
+  }
+  .fourth-article .avaliations .avaliations-cards div {
+    max-width: 5vw;
+    display: flex;
+  }
+  .fifth-article {
+    padding: 5rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+  }
+  footer .links {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    text-align: start;
+    align-items: start;
+  }
+  footer .links .slogan {
+    margin-top: 2rem;
+  }
+  footer .links .links-social-media {
+    align-self: flex-start;
+  }
+  footer .links img {
+    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */
